@@ -1,5 +1,6 @@
 import React, {useState, useEffect } from "react";
-import "./App.css";
+//import "./App.css";
+import Header from "./Header";
 import NasaCard from "./NasaCard";
 import axios from "axios";
 
@@ -19,12 +20,15 @@ function App() {
     
   }, []);
   return (
-    <div className="App">
+    <div>
+    <Header
+    date={img.date}
+    />
         <NasaCard 
         key={NasaCard}
         image={img.url}
         title={img.title}
-        date={img.date}
+        
         Explanation={img.explanation}
         credit={img.copyright}
         />

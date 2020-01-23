@@ -1,5 +1,5 @@
 import React, {useState, useEffect } from "react";
-//import "./App.css";
+import "./App.css";
 import Header from "./Header";
 import NasaCard from "./NasaCard";
 import axios from "axios";
@@ -25,10 +25,8 @@ function App() {
     date={img.date}
     />
         <NasaCard 
-        key={NasaCard}
         image={img.url}
         title={img.title}
-        
         Explanation={img.explanation}
         credit={img.copyright}
         />

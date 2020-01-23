@@ -1,14 +1,19 @@
-
 import React from "react";
+import styled from "styled-components"
+
+const WrapperSection = styled.div`
+  font-family: sans-serif;
+  text-align: center;
+`;
 
 const NasaCard = props => {
 	return (
-        <section>
+        <WrapperSection>
             <h2>{props.title}</h2>
-            <p>{props.explanation}</p>
-            <img src = {props.image} alt ="Nasa"></img>
+           <img src = {props.image} alt ="Nasa"></img>
+            <p>{props.Explanation}</p>
             <p>Credit: {props.credit}</p>
-		</section>
+		</WrapperSection>
 	);
 };
 

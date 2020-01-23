@@ -13,19 +13,19 @@ function App() {
         console.log(response.data);
         setImage(response.data);
     })
-    .catch(err => {
-        console.log('Cannot read data', err);
+    .catch(error => {
+      console.log("data was not returned", error);
     });
     
   }, []);
   return (
     <div className="App">
         <NasaCard 
-        key={img.hdurl}
+        key={NasaCard}
         image={img.url}
         title={img.title}
         date={img.date}
-        description={img.explanation}
+        Explanation={img.explanation}
         credit={img.copyright}
         />
     </div>

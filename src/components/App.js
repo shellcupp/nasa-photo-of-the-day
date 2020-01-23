@@ -10,7 +10,8 @@ function App() {
     axios
     .get(`https://api.nasa.gov/planetary/apod?api_key=Pew9vKHHGa3BB3t2fTEp53WKbC7mGCCOeFRwr57i`)
     .then(response => {
-        console.log(response.data)
+        console.log(response.data);
+        setImage(response.data);
     })
     .catch(err => {
         console.log('Cannot read data', err);

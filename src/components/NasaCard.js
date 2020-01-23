@@ -6,13 +6,12 @@ const NasaCard = props => {
 	return (
         <section>
         <h1>NASA Photo of the Day!</h1>
-			<img src={props.image} alt="Nasa"/>
-            <data
-                title={props.title}
-                date={props.date}
-                description={props.explanation}
-                credit={props.credit}
-            />
+        <h2>{props.title}</h2>
+        <p>date: {props.date}</p>
+        <p>description: {props.explanation}</p>
+        <p>credit: {props.credit}</p>
+		<img src="{props.img}" alt="Nasa"/>
+            
 		</section>
 	);
 };
